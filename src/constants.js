@@ -1,0 +1,1 @@
+export const WWWROOT = '/php-react-route-redux';

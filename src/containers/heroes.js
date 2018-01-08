@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import * as heroApi from '../api/hero-api'
 import { connect } from 'react-redux'
 
 class Heroes extends Component {
@@ -9,7 +10,9 @@ class Heroes extends Component {
             </li>
         )
     }
-
+    componentDidMount(){
+        heroApi.getAll()
+    }
     render() {
         return (
             <ul>
@@ -19,7 +22,7 @@ class Heroes extends Component {
     }
 }
 
-function mapStateToProps({ heroes }) {
+function mapStateToProps({ heroes }) { console.log(heroes)
     return { heroes }
 }
 

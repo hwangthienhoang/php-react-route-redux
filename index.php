@@ -5,7 +5,7 @@
  * Date: 1/6/18
  * Time: 5:20 PM
  */
-$wwwroot = 'http://localhost/testsite';
+$wwwroot = 'http://localhost/php-react-route-redux';
 
 ?>
 <!DOCTYPE html>
@@ -24,7 +24,7 @@ $wwwroot = 'http://localhost/testsite';
 <div id="root"></div>
 <script>
     //System.config({ baseURL: '/php-react-route-redux' });
-    var wwwroot = '/php-react-route-redux';
+    var wwwroot = '<?= $wwwroot ?>';
 </script>
 <script src="public/bundle.js"></script>
 </body>
