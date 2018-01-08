@@ -23,9 +23,10 @@ $wwwroot = 'http://localhost/testsite';
 <h3>Test site</h3>
 <div id="root"></div>
 <script>
-    var wwwroot = '/testsite';
+    //System.config({ baseURL: '/php-react-route-redux' });
+    var wwwroot = '/php-react-route-redux';
 </script>
-<script src="react-redux-router/build/static/js/main.3d56cdb5.js"></script>
+<script src="public/bundle.js"></script>
 </body>
 </html>
 
