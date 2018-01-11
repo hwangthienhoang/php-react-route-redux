@@ -4,8 +4,8 @@ import Main from './main'
 
 export default class App extends Component {
     constructor(props){
-        super(props);
-        this.state = {wwwroot: props.wwwroot};
+        super(props)
+        this.state = {wwwroot: props.wwwroot}
     }
     render() {
         return (

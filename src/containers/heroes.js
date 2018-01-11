@@ -22,8 +22,8 @@ class Heroes extends Component {
     }
 }
 
-function mapStateToProps({ heroes }) { console.log(heroes)
-    return { heroes }
+function mapStateToProps( state ) {
+    return  state.heroes || {}
 }
 
-export default connect(mapStateToProps)(Heroes)
+export default connect(state=>state.heroes||{})(Heroes)
